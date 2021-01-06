@@ -5,11 +5,8 @@
 # Use in chroot of fresh paper installation
 # 
 
-# Check if $EDITOR is set and set it to nvim if not set
-if [ $EDITOR -z ]
-then
-	export EDITOR="/usr/bin/nvim"
-
+# Set neovim as default editor
+export EDITOR="/usr/bin/nvim"
 #
 # Basic system configuration
 #
