@@ -37,9 +37,9 @@ read -p 'Enter hostname for your machine (paper-pc):' HOSTNAME
 echo $HOSTNAME > /etc/hostname
 
 # Add entries to hosts
-echo "127.0.0.1	localhost" > /etc/hosts
-echo "::1	localhost" > /etc/hosts
-echo "127.0.1.1 $HOSTNAME.localdomain $HOSTNAME" > /etc/hosts
+echo "127.0.0.1	localhost" >> /etc/hosts
+echo "::1	localhost" >> /etc/hosts
+echo "127.0.1.1 $HOSTNAME.localdomain $HOSTNAME" >> /etc/hosts
 
 # Ask user for root password
 echo 'Set root password: '
